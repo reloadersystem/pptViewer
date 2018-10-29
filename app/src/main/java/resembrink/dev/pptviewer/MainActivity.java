@@ -19,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pptViewer = (PPTViewer) findViewById(R.id.pptviewer);
-            File f = new File(Environment.getExternalStorageDirectory().getPath(), "/Download/fashion.ppt");
+           File f = new File(Environment.getExternalStorageDirectory().getPath(), "cinematica.ppt");
 
-            //  File f = FileUtils.fileFromAsset(MainActivity.this, "junit.ppt");          path = f.getPath().toString();
-            pptViewer.setNext_img(R.drawable.next).setPrev_img(R.drawable.prev)
-                    .setSettings_img(R.drawable.settings)
-                    .setZoomin_img(R.drawable.zoomin)
-                    .setZoomout_img(R.drawable.zoomout);
+            //File f = FileUtils.fileFromAsset(MainActivity.this, "junit.ppt");          path = f.getPath().toString();
+            pptViewer.setNext_img(R.drawable.ic_navigate_nex).setPrev_img(R.drawable.ic_navigate_before)
+                    .setSettings_img(R.drawable.ic_settings)
+                    .setZoomin_img(R.drawable.ic_zoom_in_black_24dp)
+                    .setZoomout_img(R.drawable.ic_zoom_out);
             pptViewer.loadPPT(this, path);
         }
     }
